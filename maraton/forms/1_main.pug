@@ -1,0 +1,36 @@
+extends ../layout/base
+
+block styles
+    style.
+        .header {
+            background-color: var(--gray);
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+
+        .header h1 {
+            font-family: "Arial Black";
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            color: lightgray;
+        }
+
+        .button {
+            margin-bottom: 20px;
+        }
+
+
+block content
+    .header
+        h1 MARATHON SKILLS 2016
+        p
+            i Москва, россия
+        p
+            i среда 12 октября 2016
+    .buttons-container
+        a.button(href='2_become_runner.html') Я хочу стать бегуном
+        a.button(href='6_become_sponsor.html') Я хочу стать спонсором бегуна
+        a.button Я хочу узнать больше о событии

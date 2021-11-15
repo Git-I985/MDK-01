@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    </title>
+    <link rel="stylesheet" href="./styles/main.css"/>
+    <style>
+      .title {
+          text-align: center;
+          margin-top: 50px;
+          color: gray;
+      }
+      .title h1 {
+          margin-bottom: 20px;
+          font-weight: lighter;
+      }
+      
+      .form {
+          padding-right: 100px;
+      }
+      
+      label {
+          /*display: flex;*/
+          /*flex-wrap: nowrap;*/
+          /*justify-content: space-between;*/
+          display: block;
+          text-align: right;
+          white-space: nowrap;
+          margin-bottom: 20px;
+      }
+      
+      label input {
+          margin-left: 20px;
+          font-size: 20px;
+          padding: 5px;
+          width: 300px;
+          font-style: italic;
+      }
+      
+      a.button {
+          display: inline-block;
+          margin-right: 20px;
+          padding: 7px 30px;
+      }
+      
+      .form-buttons-container {
+          display: flex;
+          justify-content: right;
+      }
+      
+      .buttons {
+          margin-top: 20px;
+          width: 300px;
+          text-align: left;
+      }
+      
+      .buttons a.button {
+          border-radius: 5px;
+      }
+      
+    </style>
+  </head>
+  <body>
+        <div class="page-header"><a class="button" href="1_main.html">Назад</a>
+          <h2>MARATHON SKILLS 2016</h2>
+        </div>
+    <div class="title">
+      <h1>Форма авторизации</h1>
+      <p>Пожалуйста авторизируйтесь в системе, используя ваш адрес электронной почты и пароль</p>
+    </div>
+    <div class="buttons-container">
+      <div class="form">
+        <label>Email:
+          <input type="text" placeholder="Input your email"/>
+        </label>
+        <label>Password:
+          <input type="password" placeholder="Input your password"/>
+        </label>
+        <div class="form-buttons-container">
+          <div class="buttons"><a class="button" href="9_runner_dashboard.html">Login</a><a class="button" href="1_main.html">Cancel</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><a class="button login-button" href="3_runner_auth.html">Login</a>
+      <div class="footer-text">18 дней 8 часов и 17 минут до старта марафона!</div>
+    </div>
+  </body>
+</html>

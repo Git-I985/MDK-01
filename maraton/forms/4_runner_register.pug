@@ -1,0 +1,78 @@
+extends ../layout/base
+
+block styles
+    style.
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            color: gray;
+        }
+        .title h1 {
+            margin-bottom: 20px;
+            font-weight: lighter;
+        }
+
+        .form {
+            padding-right: 100px;
+        }
+
+        label {
+            /*display: flex;*/
+            /*flex-wrap: nowrap;*/
+            /*justify-content: space-between;*/
+            display: block;
+            text-align: right;
+            white-space: nowrap;
+            margin-bottom: 20px;
+        }
+
+        label input {
+            margin-left: 20px;
+            font-size: 20px;
+            padding: 5px;
+            width: 300px;
+            font-style: italic;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-right: 20px;
+            padding: 7px 30px;
+        }
+
+        .form-buttons-container {
+            display: flex;
+            justify-content: right;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            width: 300px;
+            text-align: left;
+        }
+
+        .buttons a.button {
+            border-radius: 5px;
+        }
+
+block content
+    include ../components/page-header
+    +page-header
+
+    .title
+        h1 Регистрация бегуна
+        p Пожалуйста заполните всю информацию, чтобы зарегистрироваться в качестве бегуна
+
+
+    .buttons-container
+        .form
+            label Email:
+                input(type="text", placeholder="Input your email")
+            label Password:
+                input(type="password", placeholder="Input your password")
+
+            div.form-buttons-container
+                .buttons
+                    a.button(href="9_runner_dashboard.html") Login
+                    a.button(href="1_main.html") Cancel
+

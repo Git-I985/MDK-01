@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Tele2";
+  src: url(../fonts/tele2_displayserif-bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tele2";
+  transition: all 0.1s ease;
+  user-select: none;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+:root {
+  --lightblue: #00ccff;
+  --gray: #e9e8ed;
+}
+body {
+  opacity: 0;
+  transition: all 1s ease;
+  padding: 50px;
+}
+.container {
+  width: 35%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .actions-group-row-second {
+    flex-direction: column;
+  }
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+}
+.title::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 30%;
+  background-color: var(--lightblue);
+  z-index: -1;
+  bottom: 5px;
+}
+
+.page-selector {
+  margin-top: 30px;
+  display: flex;
+}
+
+.page-selector-button {
+  background-color: var(--gray);
+  outline: none;
+  border: none;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  padding: 15px 35px;
+  margin: 0;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+}
+
+.page-selector-button[data-selected-button] {
+  background-color: var(--lightblue);
+  border: 2px solid var(--lightblue);
+}
+
+.page {
+  margin: 30px 0;
+}
+.actions-group-row {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.actions-group-row-second {
+  justify-content: space-between;
+}
+
+[data-page] {
+  display: none;
+}
+
+input:not([type="checkbox"]) {
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.submit-button {
+  background: transparent;
+  outline: none;
+  border: 2px solid black;
+  padding: 10px 60px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: black;
+  color: white;
+}

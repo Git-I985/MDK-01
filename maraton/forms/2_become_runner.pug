@@ -1,0 +1,27 @@
+extends ../layout/base
+
+block styles
+    style.
+        .buttons-container {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .buttons-container a.button {
+            font-style: italic;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+
+block content
+    include ../components/page-header
+
+    +page-header
+
+    .buttons-container
+        a.button(href="3_runner_auth.html") Я учавствовал ранее
+        a.button(href="4_runner_register.html") Я новый участник
+

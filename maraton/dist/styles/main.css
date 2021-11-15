@@ -1,0 +1,74 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    --gray: #525252;
+    --button-color: #f2f2f2;
+}
+
+body {
+    min-width: 1000px;
+}
+
+.button {
+    display: block;
+    background-color: var(--button-color);
+    border-radius: 10px;
+    outline: none;
+    padding: 20px 40px;
+    font-size: 15px;
+    border: 1px solid gray;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+
+.button:hover {
+    filter: brightness(.9);
+}
+
+.buttons-container {
+    max-width: 40%;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.buttons-container a.button {
+    margin-bottom: 20px;
+}
+
+.page-header {
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+.page-header a.button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: lightgray;
+    margin-right: 20px;
+}
+.login-button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+}
+
+.footer-text {
+    background-color: var(--gray);
+    color: lightgray;
+    text-align: center;
+    padding: 10px 0;
+}

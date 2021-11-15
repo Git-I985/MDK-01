@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tele2 вход</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-banner"></div>
+      <div class="title-container">
+        <h1 class="title">Вход Tele2</h1>
+      </div>
+      <div class="page-selector">
+        <button class="page-selector-button" data-selected-page="page-without-password" data-selected-button>
+          Без пароля
+        </button>
+        <button class="page-selector-button" data-selected-page="page-tel-and-password">По номеру и паролю</button>
+      </div>
+      <div class="page">
+        <div data-page="page-without-password" style="display: block">
+          <input type="number" placeholder="Номер телефона" />
+        </div>
+        <div data-page="page-tel-and-password">
+          <input type="number" placeholder="Номер телефона" />
+          <input type="password" placeholder="Пароль" />
+        </div>
+      </div>
+      <div class="actions-group">
+        <div class="actions-group-row">
+          <label>
+            <input type="checkbox" class="someone-else-computer" />
+            Чужой компьютер
+          </label>
+        </div>
+        <div class="actions-group-row actions-group-row-second">
+          <button class="submit-button">Войти</button>
+          <a href="#">Вспомнить или получить пароль</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", () => {
+        document.body.style.opacity = 1;
+      });
+    </script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
